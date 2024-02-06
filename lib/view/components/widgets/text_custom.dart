@@ -6,8 +6,16 @@ class TextCustom extends StatelessWidget {
   final double? fontSize;
   final FontWeight? fontWeight;
   final Color? color;
+  final int? maxLines;
 
-  const TextCustom({required this.text, this.fontSize, this.fontWeight, this.color, super.key});
+  const TextCustom({
+    required this.text,
+    this.fontSize,
+    this.fontWeight,
+    this.color,
+    this.maxLines,
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -18,6 +26,7 @@ class TextCustom extends StatelessWidget {
         fontWeight: fontWeight,
         color: color,
       ),
+      maxLines: maxLines,
     );
   }
 }
