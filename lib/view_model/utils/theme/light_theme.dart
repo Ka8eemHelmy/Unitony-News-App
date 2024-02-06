@@ -1,87 +1,88 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../app_colors.dart';
 
 ThemeData lightTheme = ThemeData(
   colorScheme: ColorScheme.fromSeed(
-    seedColor: Colors.deepPurple,
+    seedColor: AppColors.primaryColor,
   ),
   useMaterial3: true,
   inputDecorationTheme: InputDecorationTheme(
     border: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(12),
-      borderSide: const BorderSide(
+      borderRadius: BorderRadius.circular(12.r),
+      borderSide: BorderSide(
         color: AppColors.primaryColor,
-        width: 1,
+        width: 1.w,
       ),
     ),
     enabledBorder: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(12),
-      borderSide: const BorderSide(
+      borderRadius: BorderRadius.circular(12.r),
+      borderSide: BorderSide(
         color: AppColors.primaryColor,
-        width: 1,
+        width: 1.w,
       ),
     ),
     focusedBorder: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(12),
-      borderSide: const BorderSide(
+      borderRadius: BorderRadius.circular(12.r),
+      borderSide: BorderSide(
         color: AppColors.primaryColor,
-        width: 2,
+        width: 2.w,
       ),
     ),
     errorBorder: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(12),
-      borderSide: const BorderSide(
+      borderRadius: BorderRadius.circular(12.r),
+      borderSide: BorderSide(
         color: AppColors.red,
-        width: 1,
+        width: 1.w,
       ),
     ),
     focusedErrorBorder: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(12),
-      borderSide: const BorderSide(
+      borderRadius: BorderRadius.circular(12.r),
+      borderSide: BorderSide(
         color: AppColors.red,
-        width: 2,
+        width: 2.w,
       ),
     ),
-    labelStyle: const TextStyle(
+    labelStyle: TextStyle(
       color: AppColors.accentColor,
-      fontSize: 12,
+      fontSize: 12.sp,
       fontWeight: FontWeight.bold,
     ),
-    hintStyle: const TextStyle(
+    hintStyle: TextStyle(
       color: AppColors.accentColor,
-      fontSize: 12,
+      fontSize: 12.sp,
       fontWeight: FontWeight.bold,
     ),
-    errorStyle: const TextStyle(
+    errorStyle: TextStyle(
       color: AppColors.red,
-      fontSize: 12,
+      fontSize: 12.sp,
       fontWeight: FontWeight.bold,
     ),
     disabledBorder: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(12),
-      borderSide: const BorderSide(
+      borderRadius: BorderRadius.circular(12.r),
+      borderSide: BorderSide(
         color: AppColors.grey,
-        width: 1,
+        width: 1.w,
       ),
     ),
-    floatingLabelStyle: const TextStyle(
+    floatingLabelStyle: TextStyle(
       color: AppColors.accentColor,
-      fontSize: 12,
+      fontSize: 12.sp,
       fontWeight: FontWeight.bold,
     ),
-    helperStyle: const TextStyle(
+    helperStyle: TextStyle(
       color: AppColors.accentColor,
-      fontSize: 12,
+      fontSize: 12.sp,
       fontWeight: FontWeight.bold,
     ),
     iconColor: AppColors.accentColor,
-    activeIndicatorBorder: const BorderSide(
+    activeIndicatorBorder: BorderSide(
       color: AppColors.primaryColor,
-      width: 1,
+      width: 1.w,
     ),
-    counterStyle: const TextStyle(
+    counterStyle: TextStyle(
       color: AppColors.accentColor,
-      fontSize: 12,
+      fontSize: 12.sp,
       fontWeight: FontWeight.bold,
     ),
   ),
